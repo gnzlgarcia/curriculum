@@ -1,0 +1,47 @@
+:root {
+    --dark: #2a2a2a;
+    --ligth: #E9F7EF;
+    --primary: #145A32;
+    --secondary: #F1C40F;
+}
+
+/* @font-face {
+    font-family: "Ubuntu Mono", sans-serif;
+    src: url();
+} */
+
+html {
+    font-family: 'Ubuntu Mono', sans-serif;
+    font-size: medium;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+
+}
+
+header h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--dark);
+}
+
+header h1 span {
+    font-size: 1.5rem;
+}
+
+.form-section {
+    margin: auto;
+
+    width: fit-content;
+}
+
+.form {
+
+    align-items: center;
+    justify-content: center;
+
+}
