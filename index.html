@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
     <!-- Link to Styles -->
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
 
     <title>GNZL</title>
@@ -22,77 +23,87 @@
 
     <header>
 
-        <h1>Gonzalo García, <span>Software Developer</span></h1>
+        <h1>Gonzalo García.<br><span>Software Developer & Plant Daddy</span></h1>
 
-        <nav>
+        <nav class="navegacion">
             <a href="#">Inicio</a>
-            <a href="/contacto.html">Contacto</a>
+            <a href="#">Sobre mí</a>
+            <a href="#">Proyectos</a>
+            <a href="#contacto">Contacto</a>
         </nav>
 
-        <section>
-            <h2>Diseño y desarrollo de software</h2>
+        <div class="banner">
+            <section>
+                <h2>Diseño y desarrollo de software</h2>
+                <div class="location">
+                    <img src="assets/pin.svg" alt="Icono de un pin">
+                    <p> Albolote, Granada </p>
+                </div>
+                <a href="#contacto">Contacto</a>                  
+            </section>
+        </div>
 
-            <img src="assets/pin.svg" alt="Icono de un pin">
-
-            <p>Albolote, Granada</p>
-        </section>
-        
     </header>
 
     <main>
+
         <!-- Servicios -->
 
-        <section>
-            <h2>Servicios</h2>
-            <div>
-                <img src="assets/analyze.svg" alt="Icono de análisis">
-                <h3>Análisis</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque totam magni iure est earum id rerum.
-                    Non nulla enim quisquam quis delectus molestias? Magni error temporibus doloremque, optio earum nam?
-                </p>
-            </div>
-            <div>
-                <img src="assets/icons.svg" alt="Varios iconos">
-                <h3>Diseño</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo excepturi molestias quae cum, aut,
-                    dolore aspernatur sint eligendi blanditiis animi repellendus, amet fugit quos et laborum natus.
-                    Earum, pariatur quaerat?</p>
-            </div>
-            <div>
-                <img src="assets/code.svg" alt="Icono que simboliza Programación">
-                <h3>Programación</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure veritatis obcaecati in eum nam
-                    consequatur sunt iste dolorem voluptatibus pariatur. Eius tempora dolorem, totam commodi ab
-                    provident ullam temporibus officiis.</p>
-            </div>
-        </section>
-
-        <!-- Contacto -->
-
-        <section class="form-section">
-            <h2>Contacto</h2>
-
-            <form action="">
-                <fieldset class="form">
-                    <legend>Contacta conmigo para cualquier duda.</legend>
-
-                    <label for="">Nombre</label>
-                    <input type="text" placeholder="Escribe tu nombre">
-
-                    <label for="">Teléfono</label>
-                    <input type="tel" placeholder="Escribe tu teléfono">
-
-                    <label for="">Email</label>
-                    <input type="email" placeholder="Escribe tu email">
-
-                    <label for="">Comentarios</label>
-                    <textarea name="comentarios" id=""></textarea>
-
-                    <input type="submit" value="Enviar">
-
-                </fieldset>
-            </form>
-        </section>
+       <div class="container">
+            <section>
+                <h2>Servicios</h2>
+                <div>
+                    <img src="assets/analyze.svg" alt="Icono de análisis">
+                    <h3>Análisis</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque totam magni iure est earum id rerum.
+                        Non nulla enim quisquam quis delectus molestias? Magni error temporibus doloremque, optio earum nam?
+                    </p>
+                </div>
+                <div>
+                    <img src="assets/icons.svg" alt="Varios iconos simbolizando">
+                    <h3>Diseño</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo excepturi molestias quae cum, aut,
+                        dolore aspernatur sint eligendi blanditiis animi repellendus, amet fugit quos et laborum natus.
+                        Earum, pariatur quaerat?</p>
+                </div>
+                <div>
+                    <img src="assets/code.svg" alt="Icono que simboliza Programación">
+                    <h3>Programación</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure veritatis obcaecati in eum nam
+                        consequatur sunt iste dolorem voluptatibus pariatur. Eius tempora dolorem, totam commodi ab
+                        provident ullam temporibus officiis.</p>
+                </div>
+            </section>
+    
+            <!-- Contacto -->
+    
+            <section class="contacto">
+                <h2>Contacto</h2>
+    
+                <form class="form" action="">
+                    <fieldset>
+    
+                        <legend>Contacta conmigo para cualquier duda.</legend>
+    
+                        <label for="">Nombre</label>
+                        <input type="text" placeholder="Escribe tu nombre">
+    
+                        <label for="">Teléfono</label>
+                        <input type="tel" placeholder="Escribe tu teléfono">
+    
+                        <label for="">Email</label>
+                        <input type="email" placeholder="Escribe tu email">
+    
+                        <label for="">Comentarios</label>
+                        <textarea name="comentarios" id=""></textarea>
+    
+                        <input type="submit" value="Enviar">
+    
+                    </fieldset>
+                </form>
+            </section>
+       </div>
+       <!-- Fin de la clase container -->
     </main>
 
     <footer>

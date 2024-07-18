@@ -2,13 +2,13 @@
     --dark: #2a2a2a;
     --ligth: #E9F7EF;
     --primary: #145A32;
+    --primary-ligth: #D4EFDF;
     --secondary: #F1C40F;
 }
 
-/* @font-face {
-    font-family: "Ubuntu Mono", sans-serif;
-    src: url();
-} */
+/* * {
+    background: rgb(0 100 0 / 0.1) !important;
+  } */
 
 html {
     font-family: 'Ubuntu Mono', sans-serif;
@@ -16,32 +16,132 @@ html {
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-
-
+    background-image:  linear-gradient(to top, var(--primary-ligth) 0%, var(--ligth) 100%);
 }
 
 header h1 {
     text-align: center;
-    font-size: 2rem;
-    color: var(--dark);
+    font-size: 4rem;
+    color: var(--primary);
 }
 
 header h1 span {
+    text-align: center;
     font-size: 1.5rem;
 }
 
-.form-section {
-    margin: auto;
+a {
+    color: var(--ligth);
+    text-decoration: none;
+}
 
-    width: fit-content;
+.navegacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+    background-color: var(--primary);
+    padding: 1rem;
+
+}
+
+.banner {
+    background-image: url(../assets/header-bg.jpg);
+    background-repeat: no-repeat;
+    height: 450px;
+    background-size: cover;
+    color: var(--ligth);
+}
+
+.banner section {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 50, 25, 0.5);
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    gap: 1.5;
+    margin-bottom: 1rem;
+
+}
+
+.banner a {
+    background-color: var(--secondary);
+    border-radius: 4px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    width: 90%;
+}
+
+.container {
+    background-color: var(--primary-ligth);
+    padding: 1rem 2rem;
+    margin: 1rem 1rem;
+    border-radius: 4px;
+    box-shadow: -4px 4px 12px 0px rgba(20,90,3,0.2);
+}
+
+.container h2 {
+    text-align: center;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1200px;
+        margin: auto;
+    }
+}
+
+.contacto {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: min-content;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.contacto h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .form {
-
-    align-items: center;
+    border: unset;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
     justify-content: center;
+}
+
+.form legend {
+    margin: 0px, 12px;
+}
+
+@media (min-width: 480px) {
+    .navegacion {
+        flex-direction: row;
+    }
+
+    .banner a {
+        width: auto;
+    }
+
+    .container {
+        margin: auto;
+        padding: auto;
+    }
 
 }
