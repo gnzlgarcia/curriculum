@@ -15,8 +15,10 @@ html {
     font-size: medium;
 }
 
+/* CABECERA */
+
 body {
-    background-image:  linear-gradient(to top, var(--primary-ligth) 0%, var(--ligth) 100%);
+    background-image: linear-gradient(to top, var(--primary-ligth) 0%, var(--ligth) 100%);
 }
 
 header h1 {
@@ -57,19 +59,11 @@ a {
 .banner section {
     display: flex;
     flex-direction: column;
-    background-color: rgba(0, 50, 25, 0.5);
+    background-color: rgba(0, 50, 25, 0.65);
     align-items: center;
     justify-content: center;
     width: 100%;
     height: 100%;
-}
-
-.location {
-    display: flex;
-    align-items: center;
-    gap: 1.5;
-    margin-bottom: 1rem;
-
 }
 
 .banner a {
@@ -82,30 +76,61 @@ a {
     width: 90%;
 }
 
+.location {
+    display: flex;
+    align-items: center;
+    gap: 1.5;
+    margin-bottom: 1rem;
+
+}
+
+
+/* CONTENIDO MAIN */
+
 .container {
     background-color: var(--primary-ligth);
-    padding: 1rem 2rem;
-    margin: 1rem 1rem;
-    border-radius: 4px;
-    box-shadow: -4px 4px 12px 0px rgba(20,90,3,0.2);
+    padding: 2rem 2rem;
+    margin: 2rem 2rem;
+    border-radius: 16px;
+    box-shadow: -4px 4px 12px 0px rgba(20, 90, 3, 0.2);
 }
 
 .container h2 {
     text-align: center;
+    margin-bottom: 2rem;
+}
+
+.servicios {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    text-align: center;
+}
+
+.iconos-servicios {
+    background-color: var(--secondary);
+    border-radius: 100%;
+    padding: 2rem;
 }
 
 @media (min-width: 1200px) {
     .container {
         width: 1200px;
         margin: auto;
+        padding: auto;
+    }
+
+    .servicios {
+        flex-direction: row;
     }
 }
+
+/* FORMULARIO DE CONTACTO */
 
 .contacto {
     margin: auto;
     display: flex;
     flex-direction: column;
-    width: min-content;
     align-items: center;
     justify-content: center;
 
@@ -118,16 +143,33 @@ a {
     justify-content: center;
 }
 
-.form {
-    border: unset;
+.formulario {
+    background-color: var(--dark);
+    border-radius: 8px;
+    width: 80%;
+    color: var(--ligth);
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    padding: 2rem;
     justify-content: center;
 }
 
-.form legend {
-    margin: 0px, 12px;
+fieldset {
+    border: none;
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset label {
+    margin: 1.5rem 0rem 1rem 0rem;
+}
+
+.formulario legend {
+    font-size: 1.2rem;
+}
+
+.input-grid{
+
 }
 
 @media (min-width: 480px) {
@@ -139,9 +181,8 @@ a {
         width: auto;
     }
 
-    .container {
-        margin: auto;
-        padding: auto;
+    .formulario {
+        width: 40%;
     }
 
 }
