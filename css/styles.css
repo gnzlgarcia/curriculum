@@ -156,8 +156,7 @@ a {
 
 fieldset {
     border: none;
-    display: flex;
-    flex-direction: column;
+    
 }
 
 fieldset label {
@@ -168,8 +167,10 @@ fieldset label {
     font-size: 1.2rem;
 }
 
-.input-grid{
-
+.input-grid {
+    border: none;
+    display: flex;
+    flex-direction: column;
 }
 
 @media (min-width: 480px) {
